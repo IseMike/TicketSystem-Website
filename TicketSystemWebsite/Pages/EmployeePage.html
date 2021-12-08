@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+     	<style type="text/css">
+        	form {
+             		height:400px;
+            		width:600px;
+             		position: absolute;
+					left: 50%;
+             		top: 50%;
+             		margin: -200px 0 0 -300px;
+         	}
+         	h2 {
+         			text-align: center;
+         	}
+         	div {
+         			text-align: right;
+         			width: 250px;
+         	}
+         	p {
+         			text-align: left;
+         	}
+     	</style>
+
+</head>
+<body>
+	<center>
+		<title>Ticket System</title>
+		<h1>Please fill out the ticket below:</h1>
+	</center>
+		<form action="/action_page.php">
+			<div>
+				<label>Name:</label> 
+				<input type="text" id="Ename" name="Ename"/><br><br>
+				<label>Subject: </label> 
+				<input type="text" id="Esubject" name="Esubject"/><br><br>
+			</div>
+			<p>
+				<lable>Description:</label>
+				<textarea rows="4" cols="40"></textarea><br><br>
+			</p>
+			<h2>
+				<input type="submit" value="Send"/>
+			</h2>
+		</form>
+</body>
+</html>
