@@ -1,0 +1,7 @@
+Updates
+//////////////////////////////////////
+'''UPDATE Issues
+   SET Name=?, Subject=?, Description=?, UrgencyLevel=?,
+   		AssignedTech=?, IssueID=?
+   WHERE issueID=?'''
+//////////////////////////////////////

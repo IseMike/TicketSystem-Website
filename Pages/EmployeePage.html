@@ -15,10 +15,13 @@
          	}
          	div {
          			text-align: right;
-         			width: 250px;
+         			width: 260px;
          	}
          	p {
          			text-align: left;
+         	}
+         	label textarea{
+         		vertical-align:  top;
          	}
      	</style>
 
@@ -36,8 +39,9 @@
 				<input type="text" id="Esubject" name="Esubject"/><br><br>
 			</div>
 			<p>
-				<lable>Description:</label>
-				<textarea rows="4" cols="40"></textarea><br><br>
+				<label>Description:
+				<textarea id="Edesc" name="Edesc" rows="5" cols="40"></textarea></label>
+				<br><br>
 			</p>
 			<h2>
 				<input type="submit" value="Send"/>
