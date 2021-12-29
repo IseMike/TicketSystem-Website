@@ -13,7 +13,6 @@
  <!DOCTYPE html>
  <html>
  <head>
- 	<meta charset="utf-8">
  	<title>Completed Issues</title>
  	<style>
  		table, tr, td {

@@ -3,11 +3,11 @@
 	$password = "";
 	$host = "localhost";
 
+	global $connector;
 	$connector = mysqli_connect($host, $username, $password, "ticket")
 		or die("Unable to connect to my sql.");
 
-	//$selected = mysqli_select_db("ticket", $connector)
-	//	or die("Unable to connect to ticket database.");
+
  ?>
 
  <!DOCTYPE html>
