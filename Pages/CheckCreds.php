@@ -16,6 +16,7 @@
 		$id = stripslashes($id);
 		$id = htmlspecialchars($id);
 
+		$type = -1;
 		$check = checkForEmployee($id);
 
 		// Is an Employee
@@ -25,7 +26,8 @@
 		}
 		else
 		{
-			die("Not an employee");
+			$Message = urlencode("Username Not Recognized. Please try Again.");
+			header("Location: ErrorPage.php?msg=".$Message);
 		}
 		// Normal Employee
 		if($type == 0)
@@ -43,6 +45,7 @@
 		if($type == 2)
 		{
 			printf("Tech");
+			header("Location: TechPage.html");
 		}
 	}
 

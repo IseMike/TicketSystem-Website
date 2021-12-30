@@ -12,6 +12,9 @@
              		top: 50%;
              		margin: -200px 0 0 -200px;
          	}
+         	input.custom{
+         		border-color: indianred;	
+         	}
      	</style>
 </head>
 <body>
@@ -19,11 +22,13 @@
 		<h1>Business Name</h1>
 		<form action="/Pages/CheckCreds.php" method="post" accept-charset=utf-8>
 			<lable>Employee ID:</label> 
-			<input type="text" id="Eid" name="Eid"/><br><br>
+			<input type="text" id="Eid" name="Eid" class="custom"/><br><br>
 			<input type="submit" value="Continue"/>
-			<h2><?php echo $_GET['Message'];?></h2>
+			<?php
+				$msg = $_GET['msg'];
+				echo "<script type='text/javascript'>alert('$msg');</script>";
+			?>
 		</form>
 	</center>
 </body>
 </html>
-

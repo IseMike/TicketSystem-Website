@@ -1,7 +1,6 @@
 <!doctype html>
 <html>
 <head>
-	<meta charset="utf-8">
 	<title>Ticket System</title>
      	<style type="text/css">
         	form {
@@ -16,14 +15,11 @@
 </head>
 <body>
 	<center>
-		<h1>Business Name</h1>
-		<form action="/Pages/CheckCreds.php" method="post" accept-charset=utf-8>
-			<lable>Employee ID:</label> 
-			<input type="text" id="Eid" name="Eid"/><br><br>
-			<input type="submit" value="Continue"/>
-			<h2><?php echo $_GET['Message'];?></h2>
+		<h1>Good Day Tech</h1>
+		<form action="/action_page.php">
+			<input type="submit" value="Check Issues"/> <br><br>
+			<input type="submit" value="Check Completed Issues"/>
 		</form>
 	</center>
 </body>
 </html>
-
