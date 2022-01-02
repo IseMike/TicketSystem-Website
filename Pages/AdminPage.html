@@ -16,10 +16,10 @@
 <body>
 	<center>
 		<h1>Good Day Admin</h1>
-		<form action="/action_page.php">
-			<input type="submit" value="Check Employees"/> <br><br>
-			<input type="submit" value="Check Issues"/> <br><br>
-			<input type="submit" value="Check Completed Issues"/>
+		<form method="post">
+			<input type="submit" formaction="EmployeeView.php" value="Check Employees"/> <br><br>
+			<input type="submit" name="IssuesView.php" value="Check Issues"/> <br><br>
+			<input type="submit" name="CompletedIssuesView.php" value="Check Completed Issues"/>
 		</form>
 	</center>
 </body>

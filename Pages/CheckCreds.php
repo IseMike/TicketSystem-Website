@@ -88,6 +88,7 @@
 		}
 	}
 	getID();
+	$connector->close();
 ?>
 
 <!DOCTYPE html>
