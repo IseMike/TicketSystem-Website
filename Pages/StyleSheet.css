@@ -1,0 +1,48 @@
+#resp-table {
+	width:  100%;
+	display: table;
+}
+
+#resp-table-caption{
+	display: table-caption;
+	text-align: center;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+#resp-table-header{
+	display: table-header-group;
+	background-color: gray;
+	font-weight: bold;
+	font-size: 25px;
+}
+
+.table-header-cell{
+	display: table-cell;
+	text-align: justify;
+	border-bottom: 1px solid black;
+}
+
+#resp-table-body{
+	display: table-row-group;
+}
+
+.resp-table-row{
+	display: table-row;
+}
+
+.table-body-cell{
+	display: table-cell;
+	text-align: justify;
+	padding-right: 1px;
+	padding-left: 1px;
+	border: 1px solid black;
+}
+
+.table-body-cell-desc{
+	display: table-cell;
+	text-align: justify;
+	padding-right: 10px;
+	padding-left: 5px;
+	border: 1px solid black;
+}

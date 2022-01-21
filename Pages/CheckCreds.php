@@ -1,12 +1,5 @@
 <?php
-	$username = "root";
-	$password = "";
-	$host = "localhost";
-
-	global $connector;
-	$connector = mysqli_connect($host, $username, $password, "ticket")
-		or die("Unable to connect to my sql.");
-
+	include "dbConnector.php";
 
 	function getID()
 	{
@@ -45,6 +38,8 @@
 		if($type == 2)
 		{
 			printf("Tech");
+			session_start();
+			$_SESSION['eID'] = $id;
 			header("Location: TechPage.html");
 		}
 	}
@@ -61,7 +56,7 @@
 		}
 		else
 		{
-			printf("False");
+			printf("FALSE");
 			return FALSE;
 		} 
 	}

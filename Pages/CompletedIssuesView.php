@@ -1,13 +1,5 @@
 <?php 
-	$username = "root";
-	$password = "";
-	$host = "localhost";
-
-	$connector = mysqli_connect($host, $username, $password, "ticket")
-		or die("Unable to connect to my sql.");
-
-	//$selected = mysqli_select_db("ticket", $connector)
-	//	or die("Unable to connect to ticket database.");
+	include "dbConnector.php";
  ?>
 
  <!DOCTYPE html>
@@ -56,6 +48,9 @@
  	 		 ?>
  	 	</tbody>
  	 </table>
+       <form method = 'post'>
+              <input type='submit' onclick="history.go(-1)" value='Home' style='height:50px; width:250px; margin-left: 41%; margin-top: 100px;'/>
+       </form>
  </body>
  </html>
  <?php mysqli_close($connector) ?>
